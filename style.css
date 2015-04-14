@@ -1,0 +1,293 @@
+@keyframes cubeApp
+{
+    from
+    {
+        opacity: 0;
+    }
+    to
+    {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes cubeApp
+{
+    from
+    {
+        opacity: 0;
+    }
+    to
+    {
+        opacity: 1;
+    }
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0.5s;
+}
+
+html
+{
+    height : 100%
+}
+
+body
+{
+    height: 100%;
+}
+
+#screen
+{
+    height: 75%;
+}
+
+#controls
+{
+    height: 25%;
+}
+
+#sceneScreen
+{
+    transform-style: flat;
+    -webkit-transform-style: flat; 
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#scene
+{
+    position: relative;
+    width auto;
+    height: auto;
+    margin-top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30px;
+    height: 30px;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: rotateX(45deg) rotateZ(45deg);
+    -webkit-transform-origin: 15px 15px;
+}
+
+@media (max-width: 1000px) {
+  #scene
+    {
+        margin-top: 40%;
+    }
+}
+
+#scene table
+{
+    border-collapse: collapse;
+    position: absolute;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    top: 0;
+    left: 0;
+    animation: cubeApp 1s;
+    -webkit-animation: cubeApp 1s;
+}
+
+#scene.gridTransparent table td
+{
+    background-color: transparent;
+    border: none;
+}
+
+#scene.gridTransparent table.level-1 td .cube
+{
+    box-shadow: 0 0 10px black;
+}
+
+table.level-1
+{
+    transform: translateZ(0px);
+}
+
+table.level-2
+{
+    transform: translateZ(30px);
+}
+
+table.level-3
+{
+    transform: translateZ(60px);
+}
+
+table.level-4
+{
+    transform: translateZ(90px);
+}
+
+table.level-5
+{
+    transform: translateZ(120px);
+}
+
+table.level-6
+{
+    transform: translateZ(150px);
+}
+
+table.level-7
+{
+    transform: translateZ(180px);
+}
+
+table.level-8
+{
+    transform: translateZ(210px);
+}
+
+table.level-9
+{
+    transform: translateZ(240px);
+}
+
+#scene table.hidden
+{
+    transform: translateZ(1000px) !important;
+}
+
+#scene td
+{
+    width: 30px;
+    height: 30px;
+    background-color: rgba(86,86,86,0.5);
+    border: solid 1px #d8d8d8;
+}
+
+#scene td:hover
+{
+    background-color: #007dd1;
+    //transform: translateZ(20px);
+}
+
+/*-----Cubes------*/
+
+.cube
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.cube.standAlone
+{
+    -webkit-transform: rotateX(45deg) rotateZ(45deg);
+}
+
+.cube.demo
+{
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    margin-bottom: -30px;
+}
+
+.cube:hover figure
+{
+    opacity: 0.5;
+}
+
+.cube figure
+{
+    width: 28px;
+    height: 28px;
+    border: solid 1px #262626;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: cubeApp 1s;
+    -webkit-animation: cubeApp 1s;
+    background-size: 100% 100%;
+    -webkit-transform-origin: 0% 0%;
+}
+
+.cube figure.front
+{
+    transform: rotateX(90deg) rotateY(90deg) translateZ(30px);
+}
+
+.cube figure.left
+{
+    transform: rotateX(90deg);
+}
+
+.cube figure.right
+{
+    transform: rotateX(90deg) translateZ(-30px);
+}
+
+.cube figure.back
+{
+    transform: rotateX(90deg) rotateY(90deg);
+}
+
+
+.cube figure.top
+{
+    transform: translateZ(30px);
+}
+
+.cube.mat-1 figure
+{
+    background-color: #008cff;
+}
+
+.cube.mat-2 figure
+{
+    background-color: #5000ff;
+}
+
+.cube.mat-3 figure
+{
+    background-color: #d0ff00;
+}
+
+.cube.mat-4 figure
+{
+    background-color: #ffae00;
+}
+
+.cube.mat-5 figure
+{
+    background-color: #ff2a00;
+}
+
+.cube.mat-6 figure
+{
+    background-color: white;
+    background-image: url("textures/planks_oak.png");
+}
+
+.cube.mat-7 figure
+{
+    background-color: #ff0059;
+}
+
+.cube.mat-8 figure
+{
+    background-color: #faff00;
+}
+
+.cube.mat-9 figure
+{
+    background-color: #b9fc4e;
+}
+
+.cube.mat-10 figure
+{
+    background-color: #2ac999;
+}
+
+.cube.mat-11 figure
+{
+    background-color: #3a74d8;
+}

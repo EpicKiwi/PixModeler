@@ -1,0 +1,124 @@
+<!Doctype html>
+<html manifest="offline.manifest">
+	<head>
+		<title> Table Creator for Computercraft program </title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="interface.css" />
+        <link rel="stylesheet" href="foundation-icons/foundation-icons.css" />
+        <meta charset="UTF-8" />
+	</head>
+	<body>
+        <div class="box col-1" id="screen">
+            <header>
+            <h1>PixModeler</h1><div id="offlineInfo"><i class='fi-loop'></i></div><div id="about">A propos</div><div id="help">Aide</div>
+            </header>
+            <h2 class="title">Scene</h2>
+            <div class="content" >
+                <div id="sceneScreen">
+                    <div id="scene">
+                          <table class="level-1">
+                              <tr><td></td></tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="controls">
+            <div class="box col-4">
+                <h2 class="title">Déplacement</h2>
+                <div class="content" >
+                    <table class="buttonLine">
+                        <tr>
+                            <td id="scenePivotLeft" title="Tourner la scene d'1/8 vers la gauche" ><i class="fi-previous"></i></td>
+                            <td id="sceneTurnLeft" title="Tourner la scene vers la gauche" ><i class="fi-arrow-left"></i></td>
+                            <td id="sceneTurnRight" title="Tourner la scene vers la droite" ><i class="fi-arrow-right"></i></td>
+                            <td id="scenePivotRight" title="Tourner la scene d'1/8 vers la gauche" ><i class="fi-next"></i></td>
+                        </tr>
+                        <tr>
+                            <td id="gridMore" title="Monter d'un niveau" ><i class="fi-arrow-up"></i></td>
+                            <td colspan="2" id="gridHide" title="Cacher/Afficher les grilles" ><i class="fi-eye"></i></td>
+                            <td id="gridLost" title="Déscendre d'un niveau" ><i class="fi-arrow-down"></i></td>
+                        </tr>
+                        <tr>
+                            <td id="zoomIn" class="zoom" title="Zoomer" ><i class="fi-zoom-in"></i></td>
+                            <td colspan="2" id="zoomInitial" class="zoom" title="Echelle initial" ><i class="fi-magnifying-glass"></i></td>
+                            <td id="zoomOut" class="zoom" title="Dézoomer" ><i class="fi-zoom-out"></i></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" id="goUp" class="displacement" title="Monter" ><i class="fi-arrow-up"></i></td>
+                        </tr>
+                        <tr>
+                            <td id="goLeft" class="displacement" title="Deplacer a gauche" ><i class="fi-arrow-left"></i></td>
+                            <td  colspan="2" id="goCenter" class="displacement" title="Centrer" ><i class="fi-arrows-in"></i></td>
+                            <td id="goRight" class="displacement" title="Deplacer a droite" ><i class="fi-arrow-right"></i></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" id="goDown" class="displacement" title="Descandre" ><i class="fi-arrow-down"></i></td>
+                        </tr>
+                    </table>
+                </div>
+            </div><div class="box col-4">
+                <h2 class="title">Ajouter</h2>
+                <div class="content" >
+                    <table class="buttonLine">
+                        <tr>
+                            <td id="gridAddLeft" title="Ajouter une ligne au dessus" ><i class="fi-plus"></i></td>
+                            <td id="gridRemLeft" title="Retirer une lign au dessus" ><i class="fi-minus"></i></td>
+                            <td colspan="2">Ligne</td>
+                            <td id="gridAddRight" title="Ajouter une ligne au dessous" ><i class="fi-plus"></i></td>
+                            <td id="gridRemRight" title="Retirer une ligne au dessous" ><i class="fi-minus"></i></td>
+                        </tr>
+                        <tr>
+                            <td id="gridAddTop" title="Ajouter une colonne a gauche" ><i class="fi-plus"></i></td>
+                            <td id="gridRemTop" title="Retirer une colonne a gauche" ><i class="fi-minus"></i></td>
+                            <td colspan="2">Colonne</td>
+                            <td id="gridAddBottom" title="Ajouter une colonne a droite" ><i class="fi-plus"></i></td>
+                            <td id="gridRemBottom" title="Retirer une colonne a droite" ><i class="fi-minus"></i></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" id="gridAddLevel" title="Ajouter une grille" ><i class="fi-plus"></i></td>
+                            <td colspan="2">Grille</td>
+                            <td colspan="2" id="gridRemLevel" title="Retirer une grille" ><i class="fi-minus"></i></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" id="blockSwitchDown" title="Ajouter une grille" ><i class="fi-arrow-left"></i></td>
+                            <td colspan="2">
+                                Bloc : <span id="blockMaterialId">1</span>
+                            </td>
+                            <td colspan="2" id="blockSwitchUp" title="Retirer une grille" ><i class="fi-arrow-right"></i></td>
+                        </tr>
+                    </table>
+                </div>
+            </div><div class="box col-4 nimplement">
+                <h2 class="title">Blocs</h2>
+                <div class="content" >
+                    Patience ...
+                </div>
+            </div><div class="box col-4">
+                <h2 class="title">Projet</h2>
+                <div class="content" >
+                    <table class="buttonLine">
+                        <tr id="exportJS">
+                            <td><i class="fi-page-export"></i></td>
+                            <td colspan="3" >Exporter en javascript</td>
+                        </tr>
+                        <tr id="exportLUA">
+                            <td><i class="fi-page-export"></i></td>
+                            <td colspan="3" >Exporter en lua</td>
+                        </tr>
+                        <tr id="importJS">
+                            <td><i class="fi-page-add"></i></td>
+                            <td colspan="3" >Importer en javascript</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+		<script src="jquery.min.js"></script>
+        <script src="moustache.js"></script>
+        <script src="strings.js"></script>
+        <script src="projectManager.js"></script>
+        <script src="machine.js"></script>
+        <script src="cacheManager.js"></script>
+	</body>
+</html>

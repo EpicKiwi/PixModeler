@@ -1,0 +1,18 @@
+CACHE MANIFEST
+
+CACHE:
+index.html
+interface.css
+machine.js
+moustache.js
+jquery.min.js
+projectManager.js
+cacheManager.js
+strings.js
+style.css
+textures/planks_oak.png
+foundation-icons/foundation-icons.css
+foundation-icons/foundation-icons.eot
+foundation-icons/foundation-icons.svg
+foundation-icons/foundation-icons.ttf
+foundation-icons/foundation-icons.woff
