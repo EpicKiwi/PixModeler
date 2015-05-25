@@ -80,7 +80,7 @@ header div:hover
 
 .box.col-1 .title
 {
-    padding-top: 0.1%;
+    /*padding-top: 0.1%;*/
     padding-left: 1%;
     margin-left: 1%;
     
@@ -91,7 +91,7 @@ header div:hover
 
 .box.col-4 .title
 {
-    padding-top: 0.1%;
+    /*padding-top: 0.1%;*/
     padding-left: 1%;
     margin-left: 5%;
     

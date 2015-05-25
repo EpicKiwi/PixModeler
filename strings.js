@@ -26,9 +26,9 @@ var exportJSMessage = "Votre projet a été exporté sous forme de texte. Ce tex
 
 var exportLUAMessage = "Votre projet a été exporté sous forme de tableau LUA. Ce tableau peut etre utilisé pour construir un batiment grace au programme fournit.";
 
-var aboutMessage = "Veuillez rediger cette lightbox a propos !";
+var aboutMessage = "PixModeler permet de créer grâce â une application web de petites structures cubiques. Vous pouvez ensuite exporter votre création en javascript pour le partager ou en lua pour créer votre batiment dans Minecraft a l'aide d'un programme de MineTurtle du mod Computercraft.<br/><br/>EpicKiwi";
 
-var helpMessage = "A rédiger";
+var helpMessage = "Pas d'aide pour le momment";
 
 var incompatibilityMessage = "Attention votre navigateur semble incompatible avec cette WebApp. Vous devez utiliser Google Chrome pour pouvoir utiliser cette application dans les mailleurs conditions. Si vous n'utilisez pas ce navigateurs vous risquez d'avoir des bugs de 3D.";
 
